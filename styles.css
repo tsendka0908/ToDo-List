@@ -169,6 +169,14 @@ input::placeholder {
     transition: 0.3s ease border;
 }
 
+.task.completed label {
+    text-decoration: line-through;
+}
+
+.task.editing {
+    border: 2px solid var(--blue);
+}
+
 .checkbox-group {
     display: flex;
     align-items: center;
@@ -206,6 +214,10 @@ input::placeholder {
 
 .task-icon {
     pointer-events: none;
+}
+
+input.active {
+    animation: var(--gradient-animation-0) 3s linear infinite;
 }
 
 @keyframes gradient-animation {
